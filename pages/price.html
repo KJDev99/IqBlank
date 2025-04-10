@@ -1,150 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IQ Blank</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IQ Blank</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="../index.css" rel="stylesheet" />
+  </head>
 
-  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-  <link href="../index.css" rel="stylesheet" />
-</head>
-
-<body>
-  <header class="mb-20">
-    <nav class="shadow h-30 rounded-b-[33px]">
-      <div class="max-w-7xl mx-auto flex justify-between h-full items-center">
-        <img src="../imgs/logo 1.svg" alt="" />
-        <ul class="flex gap-4.5 text-lg">
-          <li>
-            <a href="../index.html">Главная</a>
-          </li>
-          <li>
-            <a href="../pages/product.html">Скачать продукт</a>
-          </li>
-          <li>
-            <a href="../pages/docs.html">Документация</a>
-          </li>
-          <li>
-            <a href="../pages/price.html">Цены</a>
-          </li>
-          <li>
-            <a href="../pages/contact.html">Контакты</a>
-          </li>
-        </ul>
-        <div class="flex gap-4.5">
-          <button class="button_border py-4 px-4.5 text-lg rounded-full">
-            <span>Скачать демо</span>
-          </button>
-          <button class="button_border py-4 px-4.5 text-lg rounded-full">
-            <span>Получить консультацию</span>
-          </button>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="container max-w-7xl mx-auto">
-      <h1 class=" text-[60px] leading-[100%] text-[#221955] font-bold text-center ">
-        Цены на программу для печати
-        <span class="text-[#6A6BF8]"> на <br> бланках документов IQ Blank
-        </span>
-      </h1>
-      <h2 class=" text-[25px] mt-[32px] leading-[38px] text-[#221955] font-bold text-center ">
-        Стоимость лицензии на программное обеспечение <span class="text-[#6A6BF8]">
-          для печати аттестатов, дипломов, справок и <br> других официальных документов с QR-кодами
-        </span>
-      </h2>
-      <button class="button_border mt-[42px]  px-[30px] py-[16px] text-[24px] rounded-full">Скачать демо-версию</button>
-      <h1 class=" text-[50px] leading-[100%] text-[#221955] font-bold text-center mt-[97px] ">
-        Варианты <span class="text-[#6A6BF8]">лицензий и стоимости
-        </span>
-      </h1>
-      <h2 class=" text-[25px] mt-[50px] leading-[38px] text-[#221955] font-bold text-center ">
-        Выберите нужную версию: для печати бланков аттестатов, дипломов СПО и приложений. <span class="text-[#6A6BF8]">
-          Обе <br> версии лицензируются по простой и прозрачной модели.
-        </span>
-      </h2>
-    </section>
-
-    <section class="container max-w-7xl mx-auto mt-[100px]">
-      <div class="flex items-center justify-center gap-[104px]">
-        <!-- Card 1 -->
-        <div class="bg-white rounded-[30px] shadow-md w-[480px] h-[480px] p-6 flex flex-col justify-between">
-          <div>
-            <div
-              class="text-[25px] leading-[100%] text-white bg-purple-500 px-[17px] py-[6px] rounded-full inline-block mb-[49px]">
-              IQ Blank 1.0 (Аттестаты)
-            </div>
-            <div class="text-[30px] font-bold mb-[26px] text-[#212D31]">
-              1 лицензия — <span class="">3000 ₽</span>
-            </div>
-            <ul class="text-gray-700 text-[20px] leading-[100%] text-[#212D31] font-normal space-y-4 ">
-              <li>✅ Использовать на одном компьютере</li>
-              <li>✅ Поддержка и обновления — 1500 ₽ в год</li>
-              <li>✅ Доступ к обновлениям</li>
-              <li>✅ Локальная база, работа без интернета</li>
-            </ul>
+  <body>
+    <header class="mb-20">
+      <nav class="shadow2 h-30 rounded-b-[33px]">
+        <div class="max-w-7xl mx-auto flex justify-between h-full items-center">
+          <img src="../imgs/logo 1.svg" alt="" />
+          <ul class="flex gap-4.5 text-lg">
+            <li>
+              <a href="../index.html">Главная</a>
+            </li>
+            <li>
+              <a href="../pages/product.html">Скачать продукт</a>
+            </li>
+            <li>
+              <a href="../pages/docs.html">Документация</a>
+            </li>
+            <li>
+              <a href="../pages/price.html">Цены</a>
+            </li>
+            <li>
+              <a href="../pages/contact.html">Контакты</a>
+            </li>
+          </ul>
+          <div class="flex gap-4.5">
+            <button class="button_border py-4 px-4.5 text-lg rounded-full">
+              <span>Скачать демо</span>
+            </button>
+            <button class="button_border py-4 px-4.5 text-lg rounded-full">
+              <span>Получить консультацию</span>
+            </button>
           </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container max-w-7xl mx-auto">
+        <h1
+          class="text-[60px] leading-[100%] text-[#221955] font-bold text-center"
+        >
+          Цены на программу для печати
+          <span class="text-[#6A6BF8]">
+            на <br />
+            бланках документов IQ Blank
+          </span>
+        </h1>
+        <h2
+          class="text-[25px] mt-[32px] leading-[38px] text-[#221955] font-bold text-center"
+        >
+          Стоимость лицензии на программное обеспечение
+          <span class="text-[#6A6BF8]">
+            для печати аттестатов, дипломов, справок и <br />
+            других официальных документов с QR-кодами
+          </span>
+        </h2>
+        <div class="flex justify-center">
           <button
-            class="mt-[90px] border-2 border-purple-400 text-purple-500 rounded-full py-2 text-base font-medium hover:bg-purple-50 transition">
-            Получить лицензию
+            class="button_border mt-[42px] px-[30px] py-[16px] text-[24px] rounded-full"
+          >
+            <span>Скачать демо-версию</span>
           </button>
         </div>
+        <h1
+          class="text-[50px] leading-[100%] text-[#221955] font-bold text-center mt-[97px]"
+        >
+          Варианты <span class="text-[#6A6BF8]">лицензий и стоимости </span>
+        </h1>
+        <h2
+          class="text-[25px] mt-[50px] leading-[38px] text-[#221955] font-bold text-center"
+        >
+          Выберите нужную версию: для печати бланков аттестатов, дипломов СПО и
+          приложений.
+          <span class="text-[#6A6BF8]">
+            Обе <br />
+            версии лицензируются по простой и прозрачной модели.
+          </span>
+        </h2>
+      </section>
 
-        <!-- Card 2 -->
-        <div class="bg-white rounded-[30px] shadow-md w-[480px] h-[480px] p-6 flex flex-col justify-between">
-          <div>
-            <div
-              class="text-[25px] leading-[100%] text-white bg-purple-500 px-[17px] py-[6px] rounded-full inline-block mb-[49px]">
-              IQ Blank 2.0 (Дипломы СПО)
+      <section class="container max-w-7xl mx-auto mt-[100px]">
+        <div class="flex items-center justify-center gap-[104px]">
+          <!-- Card 1 -->
+          <div
+            class="bg-white rounded-[30px] shadow-md w-[480px] h-[480px] p-6 flex flex-col justify-between"
+          >
+            <div>
+              <div
+                class="text-[25px] leading-[100%] text-white bg-purple-500 px-[17px] py-[6px] rounded-full inline-block mb-[49px]"
+              >
+                IQ Blank 1.0 (Аттестаты)
+              </div>
+              <div class="text-[30px] font-bold mb-[26px] text-[#212D31]">
+                1 лицензия — <span class="">3000 ₽</span>
+              </div>
+              <ul
+                class="text-gray-700 text-[20px] leading-[100%] text-[#212D31] font-normal space-y-4"
+              >
+                <li>✅ Использовать на одном компьютере</li>
+                <li>✅ Поддержка и обновления — 1500 ₽ в год</li>
+                <li>✅ Доступ к обновлениям</li>
+                <li>✅ Локальная база, работа без интернета</li>
+              </ul>
             </div>
-            <div class="text-[30px] font-bold mb-[26px] text-[#212D31]">
-              1 лицензия — <span class="font-bold">3000 ₽</span>
-            </div>
-            <ul class="text-gray-700 text-[20px] leading-[100%] text-[#212D31] font-normal space-y-4 ">
-              <li>✅ Использовать на одном компьютере</li>
-              <li>✅ Поддержка и обновления — 1500 ₽ в год</li>
-              <li>✅ Доступ к обновлениям</li>
-              <li>✅ Перенос лицензии</li>
-              <li>✅ Локальная база, работа без интернета</li>
-              <li>✅ Печать дипломов, приложений</li>
-            </ul>
+            <button
+              class="mt-[90px] border-2 border-purple-400 text-purple-500 rounded-full py-2 text-base font-medium hover:bg-purple-50 transition"
+            >
+              Получить лицензию
+            </button>
           </div>
-          <button
-            class="border-2 border-purple-400 text-purple-500 rounded-full py-2 text-base font-medium hover:bg-purple-50 transition">
-            Получить лицензию
+
+          <!-- Card 2 -->
+          <div
+            class="bg-white rounded-[30px] shadow-md w-[480px] h-[480px] p-6 flex flex-col justify-between"
+          >
+            <div>
+              <div
+                class="text-[25px] leading-[100%] text-white bg-purple-500 px-[17px] py-[6px] rounded-full inline-block mb-[49px]"
+              >
+                IQ Blank 2.0 (Дипломы СПО)
+              </div>
+              <div class="text-[30px] font-bold mb-[26px] text-[#212D31]">
+                1 лицензия — <span class="font-bold">3000 ₽</span>
+              </div>
+              <ul
+                class="text-gray-700 text-[20px] leading-[100%] text-[#212D31] font-normal space-y-4"
+              >
+                <li>✅ Использовать на одном компьютере</li>
+                <li>✅ Поддержка и обновления — 1500 ₽ в год</li>
+                <li>✅ Доступ к обновлениям</li>
+                <li>✅ Перенос лицензии</li>
+                <li>✅ Локальная база, работа без интернета</li>
+                <li>✅ Печать дипломов, приложений</li>
+              </ul>
+            </div>
+            <button
+              class="border-2 border-purple-400 text-purple-500 rounded-full py-2 text-base font-medium hover:bg-purple-50 transition"
+            >
+              Получить лицензию
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="container max-w-7xl mx-auto mt-[150px] mb-[50px]">
+        <h2
+          class="text-[50px] leading-[100%] text-[#221955] font-bold text-center"
+        >
+          Что входит <span class="text-[#6A6BF8]"> в стоимость</span>
+        </h2>
+        <h3
+          class="text-[25px] mt-[50px] leading-[38px] text-[#221955] font-bold text-center"
+        >
+          Программа IQ Blank включает
+          <span class="text-[#6A6BF8]">
+            всё необходимое для автономной работы</span
+          >
+          без <br />
+          дополнительных трат.
+        </h3>
+        <h4
+          class="text-[25px] mt-[64px] leading-[38px] text-[#221955] font-bold text-center"
+        >
+          Вы платите один раз <span class="text-[#6A6BF8]"> и получаете:</span>
+        </h4>
+      </section>
+
+      <section
+        class="container max-w-7xl mx-auto flex gap-[88px] text-[20px] leading-[30px] tracking-[0.18px] font-normal"
+      >
+        <div class="flex flex-col gap-[42px]">
+          <button class="shadow2 w-[596px] p-6 rounded-full">
+            Неограниченную печать документов
+          </button>
+          <button class="shadow2 w-[596px] p-6 rounded-full">
+            Полный доступ ко всем функциям
+          </button>
+          <button class="shadow2 w-[596px] p-6 rounded-full">
+            QR-коды на документах
           </button>
         </div>
-      </div>
-    </section>
-
-    <section class="container max-w-7xl mx-auto mt-[150px] mb-[50px]">
-      <h2 class="text-[50px] leading-[100%] text-[#221955] font-bold text-center">Что входит <span
-          class="text-[#6A6BF8]"> в
-          стоимость</span></h2>
-      <h3 class=" text-[25px] mt-[50px] leading-[38px] text-[#221955] font-bold text-center">
-        Программа IQ Blank включает <span class="text-[#6A6BF8]"> всё необходимое для автономной работы</span> без <br>
-        дополнительных трат.
-      </h3>
-      <h4 class="text-[25px] mt-[64px] leading-[38px] text-[#221955] font-bold text-center ">
-        Вы платите один раз <span class="text-[#6A6BF8]"> и получаете:</span>
-      </h4>
-    </section>
-
-    <section class="container max-w-7xl mx-auto flex gap-[88px] text-[20px] leading-[30px] tracking-[0.18px] font-normal">
-      <div class="flex flex-col gap-[42px]">
-        <button class="shadow w-[596px] p-6 rounded-full">Неограниченную печать документов</button>
-        <button class="shadow w-[596px] p-6 rounded-full">Полный доступ ко всем функциям</button>
-        <button class="shadow w-[596px] p-6 rounded-full">QR-коды на документах</button>
-      </div>
-      <div class="flex flex-col gap-[42px]">
-        <button class="shadow w-[596px] p-6 rounded-full"> 	Локальную установку без интернета</button>
-        <button class="shadow w-[596px] p-6 rounded-full"> 	Инструменты редактирования шаблонов</button>
-        <button class="shadow w-[596px] p-6 rounded-full"> 	Бесплатную инструкцию по эксплуатации</button>
-      </div>
-    </section>
-  </main>
-</body>
-
+        <div class="flex flex-col gap-[42px]">
+          <button class="shadow2 w-[596px] p-6 rounded-full">
+            Локальную установку без интернета
+          </button>
+          <button class="shadow2 w-[596px] p-6 rounded-full">
+            Инструменты редактирования шаблонов
+          </button>
+          <button class="shadow2 w-[596px] p-6 rounded-full">
+            Бесплатную инструкцию по эксплуатации
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
