@@ -103,3 +103,13 @@ button {
   border-radius: 28px;
   padding: 30px;
 }
+@media (max-width: 640px) {
+  #carousel img {
+    min-width: 100%;
+  }
+}
+@media (min-width: 641px) {
+  #carousel img {
+    min-width: calc(25% - 12px);
+  }
+}
