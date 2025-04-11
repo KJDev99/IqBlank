@@ -25,7 +25,7 @@ button {
   left: 2px;
   right: 2px;
   bottom: 2px;
-  background: white; /* yoki fon rangingiz */
+  background: white;
   border-radius: 9999px;
   z-index: 1;
 }
@@ -84,8 +84,22 @@ button {
   height: 567px;
   top: 153px;
   right: -212px;
-
   border: 3px solid #5a3b8f;
   border-radius: 50%;
   z-index: -1;
+}
+
+.div_gradient {
+  position: relative;
+  border-radius: 30px;
+  padding: 2px;
+  background: linear-gradient(90deg, #7a55ff, #32b3e0);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.inner_content {
+  background: white;
+  border-radius: 28px;
+  padding: 30px;
 }
